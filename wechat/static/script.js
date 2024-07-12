@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const socket = io.connect('http://localhost:5000');
+    const socket = io.connect();
 
     socket.on('connect', function() {
         socket.send("User connected");
