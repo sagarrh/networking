@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, send
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'something'  # Use SECRET_KEY for security-related configurations
+app.config['SECRET_KEY'] = 'sagarr.h'  # Use SECRET_KEY for security-related configurations
 socketio = SocketIO(app, cors_allowed_origins='*')
 
 @socketio.on('message')
